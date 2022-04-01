@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  rabbitmq:
+    image: docker.io/bitnami/rabbitmq:3.9.14
+    ports:
+      - '4369:4369'
+      - '5551:5551'
+      - '5552:5552'
+      - '5672:5672'
+      - '25672:25672'
+      - '15672:15672'
+    environment:
+      - RABBITMQ_USERNAME=admin
+      - RABBITMQ_PASSWORD=admin
+      - RABBITMQ_SECURE_PASSWORD=yes
+    volumes:
+      - 'rabbitmq_data:/bitnami/rabbitmq/mnesia'
+volumes:
+  rabbitmq_data:
+    driver: local

@@ -1,0 +1,19 @@
+AddItem Key1 Value1
+AddItem Key2 Value2
+AddItem Key3 Value3
+AddItem Key4 Value4
+AddItem Key5 Value5
+AddItem Key6 Value6
+AddItem Key7 Value7
+AddItem Key8 Value8
+RemoveItem Key1
+RemoveItem Key2
+RemoveItem Key3
+RemoveItem Key4
+GetItem Key1
+GetItem Key2
+GetItem Key5
+GetItem Key6
+GetAllItems
+AddItem Key5 Value555
+GetAllItems
